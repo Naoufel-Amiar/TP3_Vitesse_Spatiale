@@ -2,13 +2,22 @@
 #define PLANETES_H
 
 
-Planetes::Planetes(std::string name, int x, int y, int population, std::string nation, float fuelPrice) {
-    Name_ = name;
-    x_ = x;
-    y_ = y;
-    population_ = population;
-    Nation_ = nation;
-    FuelPrice_ = fuelPrice;
-}
+class Planetes {
+
+private:
+
+    std::string Name_;
+    int x_;
+    int y_;
+    int population_;
+    std::string Nation_;
+    float FuelPrice_;
+
+
+public:
+    Planetes(std::string name, int x, int y, int population, std::string nation, float fuelPrice);
+
+    
+};
 
 #endif

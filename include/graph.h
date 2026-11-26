@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "planetes.h"
 
 
 #ifndef GRAPH_H
@@ -9,10 +10,10 @@
 
 class Graph {
 private:
-    vector<Planetes> PlanetesList; // Liste des planètes
-    vector<vector<int>> Matrix; // Matrice d'adjacence
+    std::vector<Planetes> PlanetesList; // Liste des planètes
+    std::vector<std::vector<int>> Matrix; // Matrice d'adjacence
 
-
+    void GetPlaneteListe(std::vector<Planetes>&);
 public:    
 };
 
