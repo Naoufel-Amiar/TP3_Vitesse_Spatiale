@@ -14,3 +14,10 @@ Planetes::Planetes(string name, int x, int y, int population, string nation, flo
     FuelPrice_ = fuelPrice;
 }
 
+int Planetes::GetX() const {
+    return x_;
+}
+
+int Planetes::GetY() const {
+    return y_;
+}

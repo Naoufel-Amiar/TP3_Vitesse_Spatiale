@@ -10,11 +10,15 @@
 
 class Graph {
 private:
-    std::vector<Planetes> PlanetesList; // Liste des planètes
-    std::vector<std::vector<int>> Matrix; // Matrice d'adjacence
+    std::vector<Planetes> PlanetesList_; // Liste des planètes
+    std::vector<std::vector<int>> Matrix_; // Matrice d'adjacence
+    int n;
 
-    void GetPlaneteListe(std::vector<Planetes>&);
 public:    
+    Graph(std::vector<Planetes> planeteListFull);
+    void AfficherMatAdj();
+
+
 };
 
 

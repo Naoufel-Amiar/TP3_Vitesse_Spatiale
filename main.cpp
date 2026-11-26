@@ -5,6 +5,7 @@
 #include "chargement.h"
 #include "vaisseaux.h"
 #include "planetes.h"
+#include "graph.h"
 
 int main()
 {
@@ -37,6 +38,11 @@ int main()
 
         std::cout << "Nombre de planetes chargees : "
                   << planetes.size() << std::endl;
+
+
+        std::cout << "Affichage de la matrice d'adjacence : " << std::endl;
+        Graph graph(planetes);
+        graph.AfficherMatAdj();
 
         // ==================== RESULTAT ====================
 

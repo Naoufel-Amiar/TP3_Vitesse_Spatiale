@@ -13,6 +13,7 @@ add_executable(TP3_Vitesse_Spatiale
     source/vaisseaux.cpp
     source/planetes.cpp
     source/chargement.cpp
+    source/graph.cpp
 )
 
 # Dossier des fichiers d'en-tete
