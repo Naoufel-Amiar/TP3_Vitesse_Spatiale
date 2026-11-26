@@ -1,22 +1,53 @@
 #include <iostream>
+#include <vector>
+#include <exception>
+
+#include "chargement.h"
 #include "vaisseaux.h"
+#include "planetes.h"
 
 int main()
 {
-    Vaisseau vaisseau("Asp-Explorer", 850.0);
+    try
+    {
+        // ==================== VAISSEAUX ====================
 
-    vaisseau.afficher();
+        std::cout << "===== CHARGEMENT DES VAISSEAUX ====="
+                  << std::endl;
 
-    std::cout << std::boolalpha;
+        std::vector<Vaisseau> vaisseaux =
+            Chargement::chargerVaisseaux("../data/VAISSEAUX.txt");
 
-    std::cout << "Distance 500 : "
-              << vaisseau.peutParcourir(500) << std::endl;
+        std::cout << "Nombre de vaisseaux charges : "
+                  << vaisseaux.size() << std::endl;
 
-    std::cout << "Distance 850 : "
-              << vaisseau.peutParcourir(850) << std::endl;
+        for (const Vaisseau& vaisseau : vaisseaux)
+        {
+            vaisseau.afficher();
+            std::cout << "--------------------" << std::endl;
+        }
 
-    std::cout << "Distance 900 : "
-              << vaisseau.peutParcourir(900) << std::endl;
+        // ==================== PLANETES ====================
+
+        std::cout << "\n===== CHARGEMENT DES PLANETES ====="
+                  << std::endl;
+
+        std::vector<Planetes> planetes =
+            Chargement::chargerPlanetes("../data/PLANETES.txt");
+
+        std::cout << "Nombre de planetes chargees : "
+                  << planetes.size() << std::endl;
+
+        // ==================== RESULTAT ====================
+
+        std::cout << "\nChargement termine avec succes."
+                  << std::endl;
+    }
+    catch (const std::exception& erreur)
+    {
+        std::cerr << "ERREUR : " << erreur.what() << std::endl;
+        return 1;
+    }
 
     return 0;
 }
