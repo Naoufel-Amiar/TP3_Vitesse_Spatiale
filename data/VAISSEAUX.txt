@@ -1,0 +1,9 @@
+Asp-Explorer 850
+Kralt-MK2 600
+Anaconda 1000
+Hauler 350
+Type-9-Heavy 450
+Eagle-MK2 150
+Viper-MK3 200
+Federal-Corvet 400
+SideWinder-MK1 100
