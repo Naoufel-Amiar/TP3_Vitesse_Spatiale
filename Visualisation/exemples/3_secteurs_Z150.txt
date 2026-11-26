@@ -1,0 +1,8 @@
+SECTEURS 3
+PLANETES Planetes_20_nations.txt
+VAISSEAU VITT-MOD-Z150 150
+CONFLIT Delta Omega
+CONFLIT Sigma Omega
+SECTEUR 13 Delta_1 Delta_2 Delta_4 Sigma_2 Sigma_8 Sigma_9 Sigma_1 Sigma_7 Sigma_3 Sigma_6 Sigma_5 Sigma_4 Delta_5
+SECTEUR 1 Delta_3
+SECTEUR 6 Omega_1 Omega_5 Omega_6 Omega_4 Omega_3 Omega_2

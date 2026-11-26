@@ -1,0 +1,8 @@
+ROUTE 2
+PLANETES Planetes_20_nations.txt
+VAISSEAU VITT-MOD-Z150 150
+DEPART Delta_1
+ARRIVEE Omega_1
+CONFLIT Delta Omega
+CONFLIT Sigma Omega
+CHEMIN 0
