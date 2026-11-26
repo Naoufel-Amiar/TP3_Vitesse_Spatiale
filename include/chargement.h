@@ -17,7 +17,7 @@ public:
     );
 
     // Chargement des planetes
-    static std::vector<Planete> chargerPlanetes(
+    static std::vector<Planetes> chargerPlanetes(
         const std::string& fichier
     );
 };

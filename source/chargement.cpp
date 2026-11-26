@@ -32,10 +32,10 @@ std::vector<Vaisseau> Chargement::chargerVaisseaux(
 
 // ==================== PLANETES ====================
 
-std::vector<Planete> Chargement::chargerPlanetes(
+std::vector<Planetes> Chargement::chargerPlanetes(
     const std::string& fichier)
 {
-    std::vector<Planete> planetes;
+    std::vector<Planetes> planetes;
 
     std::ifstream flux(fichier);
 
