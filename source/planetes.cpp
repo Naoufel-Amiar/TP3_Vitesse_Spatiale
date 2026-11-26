@@ -1,24 +1,18 @@
-#include <iostream>
-#include <string>
 #include "planetes.h"
 
-
-using namespace std;
-
-class Planetes {
-
-private:
-
-    string Name_;
-    int x_;
-    int y_;
-    int population_;
-    string Nation_;
-    float FuelPrice_;
-
-
-public:
-    planetes(std::string name, int x, int y, int population, std::string nation, float fuelPrice);
-    
-
-};
+Planetes::Planetes(
+    std::string name,
+    double x,
+    double y,
+    long long population,
+    std::string nation,
+    double fuelPrice
+)
+{
+    Name_ = name;
+    x_ = x;
+    y_ = y;
+    population_ = population;
+    Nation_ = nation;
+    FuelPrice_ = fuelPrice;
+}

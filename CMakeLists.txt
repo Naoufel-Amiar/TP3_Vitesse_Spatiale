@@ -11,6 +11,8 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 add_executable(TP3_Vitesse_Spatiale
     main.cpp
     source/vaisseaux.cpp
+    source/planetes.cpp
+    source/chargement.cpp
 )
 
 # Dossier des fichiers d'en-tete
