@@ -18,7 +18,7 @@ public:
     Vaisseau(const std::string& modele, double capacite);
 
     // Destructeur
-    ~Vaisseau();
+    ~Vaisseau() = default;
 
     // Getters
     std::string getModele() const;
