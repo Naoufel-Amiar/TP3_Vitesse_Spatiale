@@ -1,0 +1,20 @@
+# Compilation
+build/
+cmake-build-*/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# Executables et fichiers objets
+*.exe
+*.o
+*.obj
+*.out
+
+# IDE
+.vscode/
+.idea/
