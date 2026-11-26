@@ -18,6 +18,7 @@ private:
 
 
 public:
-
+    planetes(std::string name, int x, int y, int population, std::string nation, float fuelPrice);
+    
 
 };
